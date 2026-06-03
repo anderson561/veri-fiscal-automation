@@ -1,0 +1,12 @@
+playwright
+pytest-playwright
+tenacity
+loguru
+pydantic
+pydantic-settings
+python-dotenv
+pytest
+pytest-asyncio
+pytest-mock
+pdfplumber
+reportlab

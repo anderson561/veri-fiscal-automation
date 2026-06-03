@@ -1,0 +1,12 @@
+enabled_resources:
+  skills:
+    - dev-craftsmanship-suite
+    - memoria obsidian
+    - python-automation-pro
+    - python-ds-architect
+    - qa-automation-expert
+  specs:
+    - data-architecture-spec.md
+    - data-pipeline-orchestrator.md
+  workflows:
+    - data-pipeline-orchestrator.md
