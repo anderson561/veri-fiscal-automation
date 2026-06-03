@@ -1,0 +1,19 @@
+# Generic Python project .gitignore
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+*.dist-info/
+.env
+*.env
+logs/
+.venv/
+venv/
+build/
+-dist/
+*.log
+.idea/
+.vscode/
+# OS-generated files
+.DS_Store
+Thumbs.db
