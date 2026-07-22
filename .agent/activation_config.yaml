@@ -1,12 +1,23 @@
 enabled_resources:
   skills:
+    - architecture-inspector
+    - data-math-tools
     - dev-craftsmanship-suite
+    - infrastructure-automator
     - memoria obsidian
+    - php-laravel-devops-pro
+    - product-analytics-simulator
     - python-automation-pro
     - python-ds-architect
     - qa-automation-expert
+    - scrum-flow-metrics
+    - ux-ui-designer-pro
+    - web-browser-capability
+    - xp-refactoring-tools
   specs:
     - data-architecture-spec.md
     - data-pipeline-orchestrator.md
+    - ux-ui-product-spec.md
   workflows:
     - data-pipeline-orchestrator.md
+    - interface-design-systematizer.md

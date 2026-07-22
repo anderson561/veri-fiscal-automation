@@ -10,7 +10,9 @@ logs/
 .venv/
 venv/
 build/
--dist/
+dist/
+node_modules/
+session/
 *.log
 .idea/
 .vscode/

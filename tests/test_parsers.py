@@ -16,11 +16,11 @@ SIMPLES NAC.        11/2025   22/12/2025     19.173,92    19.173,92 3.834,78   6
 def test_sief_parser_extracts_all_debts():
     """Valida se o regex extrai corretamente as 4 linhas de débitos com complexidade de números brasileiros"""
     result = SiefParser.parse_text(MOCK_PDF_TEXT)
-    
-    assert len(result) == 4
-    
+
+    assert len(result["debts"]) == 4
+
     # Valida linha simples sem milhar
-    assert result[0] == {
+    assert result["debts"][0] == {
         "receita": "0561-07 - IRRF",
         "pa_exerc": "12/2025",
         "dt_vcto": "20/01/2026",
@@ -31,9 +31,9 @@ def test_sief_parser_extracts_all_debts():
         "sdo_dev_cons": "135,60",
         "situacao": "DEVEDOR"
     }
-    
+
     # Valida linha com milhar brasileiro (.) e decimal (,)
-    assert result[3] == {
+    assert result["debts"][3] == {
         "receita": "SIMPLES NAC.",
         "pa_exerc": "11/2025",
         "dt_vcto": "22/12/2025",
@@ -52,4 +52,4 @@ def test_sief_parser_extracts_all_debts():
 def test_sief_parser_rejects_invalid_rows(invalid_row):
     """Garante que a regex não dê falso positivo em linhas corrompidas."""
     result = SiefParser.parse_text(invalid_row)
-    assert len(result) == 0
+    assert len(result["debts"]) == 0

@@ -23,7 +23,7 @@ def clear_logs_directory():
                     continue # Melhor não mexer no log principal para evitar erros de permissão
                 
                 os.unlink(file_path)
-            elif os.path.is_dir(file_path):
+            elif os.path.isdir(file_path):
                 shutil.rmtree(file_path)
         except Exception as e:
             log.warning(f"Não foi possível excluir {file_path}: {e}")
